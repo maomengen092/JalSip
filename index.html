@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JalSip — Simple water reminder</title>
+  <meta name="description" content="Simple water reminder. Log cups and keep a daily hydration habit. No account required." />
+  <style>
+    :root {
+      --text:#0c4a6e; --muted:#475569; --line:#e0f2fe;
+      --bg:#f0f9ff; --card:#fff; --accent:#0284c7; --soft:#e0f2fe;
+    }
+    * { box-sizing: border-box; }
+    body { margin:0; font-family: Inter, "Noto Sans", system-ui, sans-serif; color:#0f172a; background:var(--bg); line-height:1.65; }
+    a { color:var(--accent); }
+    .wrap { max-width:960px; margin:0 auto; padding:0 22px; }
+    header { background:#0c4a6e; color:#fff; }
+    header .wrap { display:flex; justify-content:space-between; align-items:center; padding:16px 22px; }
+    .logo { font-weight:800; letter-spacing:.04em; font-size:15px; }
+    .logo em { font-style:normal; color:#7dd3fc; }
+    nav a { color:#bae6fd; text-decoration:none; margin-left:16px; font-size:13px; }
+    nav a:hover { color:#fff; }
+    .hero { background:#0c4a6e; color:#fff; padding:56px 0 48px; }
+    .hero .wrap { display:grid; grid-template-columns:1.15fr .85fr; gap:36px; align-items:center; }
+    .kicker { font-size:12px; letter-spacing:.14em; text-transform:uppercase; color:#7dd3fc; font-weight:700; margin:0 0 12px; }
+    h1 { font-size:40px; line-height:1.12; margin:0 0 14px; }
+    .lead { color:#e0f2fe; font-size:17px; margin:0; max-width:520px; }
+    .cup { width:140px; height:180px; margin:0 auto; border:6px solid #7dd3fc; border-radius:16px 16px 28px 28px; position:relative; overflow:hidden; background:#075985; }
+    .cup i { position:absolute; left:0; right:0; bottom:0; height:62%; background:linear-gradient(#38bdf8,#0284c7); }
+    .cup b { position:absolute; inset:0; display:flex; align-items:center; justify-content:center; font-size:22px; z-index:1; }
+    h2 { font-size:22px; margin:0 0 8px; }
+    h3 { font-size:16px; margin:0 0 6px; }
+    .section { background:var(--card); border:1px solid #bae6fd; border-radius:16px; padding:28px 30px; margin:18px 0 0; }
+    .muted { color:var(--muted); margin:0 0 16px; }
+    .grid3 { display:grid; grid-template-columns:repeat(3,1fr); gap:12px; }
+    .tile { background:#f8fafc; border:1px solid #e2e8f0; border-radius:12px; padding:16px 18px; }
+    .tile p { margin:0; color:var(--muted); font-size:14px; }
+    .num { display:block; width:28px; height:28px; border-radius:50%; background:var(--soft); color:var(--accent); font-weight:700; font-size:13px; text-align:center; line-height:28px; margin-bottom:8px; }
+    ul { margin:8px 0 0; padding-left:18px; color:var(--muted); }
+    li { margin:5px 0; }
+    .contact-row { display:flex; gap:28px; flex-wrap:wrap; }
+    .contact-row p { margin:4px 0; color:var(--muted); }
+    footer { color:#94a3b8; font-size:13px; padding:28px 0 48px; }
+    footer a { color:#64748b; text-decoration:none; margin-right:14px; }
+    @media (max-width:760px) {
+      .hero .wrap, .grid3 { grid-template-columns:1fr; }
+      h1 { font-size:30px; }
+      nav { display:none; }
+      .hero { padding:36px 0 32px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <div class="logo">JAL<em>SIP</em></div>
+      <nav>
+        <a href="#product">Product</a>
+        <a href="#how">How it works</a>
+        <a href="#privacy">Privacy</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="wrap">
+      <div>
+        <p class="kicker">Available on Google Play · Health &amp; Fitness</p>
+        <h1>Simple water reminder. Log cups and keep a daily hydration habit.</h1>
+        <p class="lead">Log each glass, see today’s total against your goal, and optionally turn on drink reminders. No account.</p>
+      </div>
+      <div class="cup" aria-hidden="true"><i></i><b>1.5 L</b></div>
+    </div>
+  </section>
+
+  <main class="wrap">
+    <section class="section" id="product">
+      <h2>What you can do</h2>
+      <p class="muted">JalSip is a simple water reminder for everyday hydration. Unlock chests as you hit intake milestones. Drink logs stay on the device.</p>
+      <div class="grid3">
+        <div class="tile"><h3>Log each glass</h3><p>Tap 250 ml, 500 ml or a custom amount.</p></div>
+        <div class="tile"><h3>See today’s goal</h3><p>Compare your total with a daily hydration target.</p></div>
+        <div class="tile"><h3>No account needed</h3><p>Use the app without sign-up. History stays on the phone.</p></div>
+      </div>
+    </section>
+
+    <section class="section" id="how">
+      <h2>How it works</h2>
+      <p class="muted">JalSip stores your log, goal and history on the device. Notification permission is only used for drink reminders. If you deny it, you can still log water. Chests are an in-app motivation layer. Coins stay local. This app does not send you money and does not open a bank or wallet account.</p>
+      <div class="grid3">
+        <div class="tile"><span class="num">1</span><h3>Log a drink</h3><p>Add a cup when you drink. The daily total updates immediately.</p></div>
+        <div class="tile"><span class="num">2</span><h3>Optional reminders</h3><p>Allow notifications if you want local drink alerts. You can skip this.</p></div>
+        <div class="tile"><span class="num">3</span><h3>Open chests</h3><p>Hit an intake milestone. Some chests may show an ad.</p></div>
+      </div>
+    </section>
+
+    <section class="section" id="ads">
+      <h2>Ads</h2>
+      <p class="muted">The app may show rewarded video and interstitial ads. You can reset your advertising ID in Android settings. JalSip is built for hydration, not for banking.</p>
+    </section>
+
+    <section class="section" id="privacy">
+      <h2>Privacy</h2>
+      <p class="muted">No sign-up. No contacts, SMS, location or activity permission. Water logs stay on the device.</p>
+      <ul>
+        <li>Notifications are only for optional drink reminders</li>
+        <li>Clear app data or uninstall to remove local history</li>
+        <li>Read the full policy: <a href="privacy_policy.html">Privacy Policy</a></li>
+      </ul>
+    </section>
+
+    <section class="section" id="contact">
+      <h2>Contact</h2>
+      <div class="contact-row">
+        <div>
+          <p>Support</p>
+          <p><strong>support@chalofit.club</strong></p>
+        </div>
+        <div>
+          <p>Privacy</p>
+          <p><strong>privacy@chalofit.club</strong></p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>
+        <a href="#product">Product</a>
+        <a href="#how">How it works</a>
+        <a href="privacy_policy.html">Privacy policy</a>
+        <a href="#contact">Contact</a>
+      </p>
+      <p>© 2026 JalSip. All rights reserved.</p>
+    </footer>
+  </main>
+</body>
+</html>
