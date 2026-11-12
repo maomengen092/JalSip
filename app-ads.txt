@@ -2,6 +2,8 @@
 # Add authorized seller lines after AdMob / Mintegral / Meta / InMobi accounts are approved.
 # Format: <ad-network-domain>, <publisher-id>, DIRECT|RESELLER, <cert-authority-id>
 
+google.com, pub-9551159754837112, DIRECT, f08c47fec0942fa0
+
 toponad.com, 0a77cc8959ae533c5469f7cc40859789, DIRECT, 1d49fe424a1a456d
 adagio.io, 1050, RESELLER
 admanmedia.com, 2433, RESELLER
