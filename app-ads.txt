@@ -1,7 +1,7 @@
 # app-ads.txt for chalofit.club
 # Add authorized seller lines after AdMob / Mintegral / Meta / InMobi accounts are approved.
 # Format: <ad-network-domain>, <publisher-id>, DIRECT|RESELLER, <cert-authority-id>
-# songm9714@gmail.com
+CONTACT: songm9714@gmail.com
 
 
 toponad.com, 921e71031cd15b4b9a1a1b638d0d2c6c, DIRECT, 1d49fe424a1a456d
